@@ -113,7 +113,11 @@ Créés sur ton PC et jamais publiés : `sauvegarde-tv/` (état d'origine de la 
 
 ## Contribuer
 
-Le plus utile : **un profil pour ta télé**. Copie [`profils/tcl-android9.json`](profils/tcl-android9.json), adapte `correspond` (fabricant et version d'Android, voir `adb shell getprop ro.product.manufacturer`), et range les applis par catégories. Mets dans `jamais` tout ce qui fait marcher la télé. Teste avec `installer.ps1 -Simulation`, puis propose-le en pull request.
+Le plus utile : **un profil pour ta télé**, pour que PuriTV sache quoi proposer de désactiver et quoi ne jamais toucher. Tout est expliqué dans [CONTRIBUTING.md](CONTRIBUTING.md) : ajouter une télé, modifier l'appli ou les scripts, et les règles du projet.
+
+- Un problème : ouvre un ticket **🐞 Signaler un problème**.
+- Ta télé n'est pas prise en charge : ticket **📺 Ajouter ma télé**.
+- Une question : onglet **Discussions**.
 
 ## Avertissement
 

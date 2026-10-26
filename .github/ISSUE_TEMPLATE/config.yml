@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ❓ Poser une question
+    url: https://github.com/ValentinMglc/PuriTV/discussions
+    about: Pour l'entraide et les questions, plutôt que d'ouvrir un ticket.

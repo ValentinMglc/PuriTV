@@ -1,0 +1,28 @@
+name: 💡 Proposer une idée
+description: Une amélioration pour PuriTV, l'installateur ou les scripts.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idee
+    attributes:
+      label: Ton idée
+      description: Ce que tu aimerais, et pourquoi ce serait utile.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: partie
+    attributes:
+      label: Ça concerne
+      options:
+        - L'écran d'accueil ou l'économiseur d'écran
+        - L'allègement de la télé (installateur, profils)
+        - Les scripts (vérification, restauration)
+        - La documentation
+        - Autre
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Comment tu fais aujourd'hui
+      description: Facultatif. Une solution de contournement, ou ce qui existe ailleurs.

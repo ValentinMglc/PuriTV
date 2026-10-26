@@ -1,0 +1,74 @@
+name: 🐞 Signaler un problème
+description: Quelque chose ne marche pas avec l'installateur, PuriTV ou les scripts.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de signaler un problème !
+        Avant d'envoyer : en cas de souci sur la télé, `restaurer-tv.bat` remet tout comme avant.
+        Ne colle jamais le contenu de `sauvegarde-tv\` ni de `config-tv.json` : ils contiennent des informations sur ta télé.
+
+  - type: input
+    id: tele
+    attributes:
+      label: Télé
+      description: Marque et modèle (Paramètres › Système › À propos).
+      placeholder: "TCL 43P615"
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: Version d'Android
+      placeholder: "9"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: partie
+    attributes:
+      label: Où se passe le problème ?
+      options:
+        - Installateur (installer.bat)
+        - Écran d'accueil PuriTV
+        - Économiseur d'écran
+        - Réglages PuriTV (⚙)
+        - Vérification (verifier-tv.bat ou automatique)
+        - Restauration (restaurer-tv.bat)
+        - Compilation de l'appli (app\build.ps1)
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Ce qui s'est passé
+      description: Ce que tu as fait, ce que tu attendais, et ce qui s'est passé à la place.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sortie
+    attributes:
+      label: Messages affichés
+      description: Copie ici ce qu'affiche la fenêtre du script (sans tes informations personnelles).
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de PuriTV
+      placeholder: "1.0"
+
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: Vérifications
+      options:
+        - label: J'ai lu le README, en particulier la partie « Bon à savoir ».
+          required: true
+        - label: J'ai vérifié qu'aucun ticket ouvert ne parle déjà de ce problème.
+          required: true

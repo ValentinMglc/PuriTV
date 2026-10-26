@@ -1,0 +1,72 @@
+name: 📺 Ajouter ma télé
+description: Proposer un profil pour une télé pas encore prise en charge.
+labels: ["nouvelle télé"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Un profil dit à PuriTV quelles applis proposer de désactiver sur une télé, et lesquelles ne **jamais** toucher.
+        Tu peux aussi proposer directement le fichier en pull request : voir [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md).
+
+        Pour obtenir les informations ci-dessous, avec la télé connectée au PC :
+        ```
+        adb shell getprop ro.product.manufacturer
+        adb shell getprop ro.product.model
+        adb shell getprop ro.build.version.release
+        adb shell pm list packages -s
+        ```
+
+  - type: input
+    id: fabricant
+    attributes:
+      label: Fabricant (ro.product.manufacturer)
+      placeholder: "TCL"
+    validations:
+      required: true
+
+  - type: input
+    id: modele
+    attributes:
+      label: Modèle (ro.product.model)
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: Version d'Android (ro.build.version.release)
+    validations:
+      required: true
+
+  - type: textarea
+    id: a-desactiver
+    attributes:
+      label: Applis à proposer de désactiver
+      description: Pubs, télémétrie, applis du fabricant inutiles… Une par ligne, avec ce qu'elle fait si tu le sais.
+      placeholder: |
+        com.fabricant.pubs : bannières publicitaires
+        com.fabricant.stats : statistiques d'usage
+    validations:
+      required: true
+
+  - type: textarea
+    id: jamais
+    attributes:
+      label: Applis à ne jamais toucher
+      description: Tout ce qui fait marcher la télé (chaînes, entrées HDMI, image, son, télécommande, mises à jour).
+    validations:
+      required: true
+
+  - type: textarea
+    id: liste
+    attributes:
+      label: Liste des applis système (pm list packages -s)
+      render: text
+
+  - type: checkboxes
+    id: test
+    attributes:
+      label: Test
+      options:
+        - label: J'ai désactivé ces applis sur ma télé et elle fonctionne normalement (image, son, chaînes, HDMI, télécommande).
+        - label: J'ai vérifié que restaurer-tv.bat remet tout comme avant.
