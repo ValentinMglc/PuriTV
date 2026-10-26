@@ -115,9 +115,12 @@ Créés sur ton PC et jamais publiés : `sauvegarde-tv/` (état d'origine de la 
 
 Le plus utile : **un profil pour ta télé**, pour que PuriTV sache quoi proposer de désactiver et quoi ne jamais toucher. Tout est expliqué dans [CONTRIBUTING.md](CONTRIBUTING.md) : ajouter une télé, modifier l'appli ou les scripts, et les règles du projet.
 
-- Un problème : ouvre un ticket **🐞 Signaler un problème**.
-- Ta télé n'est pas prise en charge : ticket **📺 Ajouter ma télé**.
-- Une question : onglet **Discussions**.
+| | |
+|---|---|
+| Un problème ? | [🐞 Signaler un problème](https://github.com/ValentinMglc/PuriTV/issues/new?template=1-probleme.yml) |
+| Ta télé n'est pas prise en charge ? | [📺 Ajouter ma télé](https://github.com/ValentinMglc/PuriTV/issues/new?template=2-nouvelle-tele.yml) |
+| Une idée ? | [💡 Proposer une idée](https://github.com/ValentinMglc/PuriTV/issues/new?template=3-idee.yml) |
+| Une question ? | [❓ Discussions](https://github.com/ValentinMglc/PuriTV/discussions) |
 
 ## Avertissement
 
