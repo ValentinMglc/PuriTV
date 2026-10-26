@@ -1,0 +1,14 @@
+sauvegarde-tv/
+config-tv.json
+*.log
+
+*.keystore
+*.keystore.motdepasse
+*.jks
+
+app/build/
+*.apk
+*.apk.idsig
+
+Thumbs.db
+desktop.ini

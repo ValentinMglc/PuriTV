@@ -1,0 +1,90 @@
+{
+  "nom": "TCL Android TV 9",
+  "teste_sur": "TCL UnionTV, Android 9, correctif de sécurité 2020-11",
+  "correspond": { "fabricant": "TCL", "android": "9" },
+  "categories": [
+    {
+      "titre": "Télémétrie TCL",
+      "explication": "Statistiques d'usage et gestion à distance envoyées à TCL.",
+      "recommande": true,
+      "paquets": {
+        "com.tcl.bi": "Statistiques d'usage",
+        "com.tcl.common.terminalmanagerplus": "Gestion à distance et notifications push"
+      }
+    },
+    {
+      "titre": "Pubs et promos TCL",
+      "explication": "Incrustations publicitaires et « nettoyeur » avec promos.",
+      "recommande": true,
+      "paquets": {
+        "com.tcl.esticker": "Incrustations promotionnelles",
+        "com.tcl.tvweishi": "« TV Guard », nettoyeur avec promos"
+      }
+    },
+    {
+      "titre": "Recommandations sponsorisées Google",
+      "explication": "Les rangées « à découvrir » de l'écran d'accueil Google.",
+      "recommande": true,
+      "paquets": {
+        "com.google.android.tvrecommendations": "Recommandations",
+        "com.google.android.leanbacklauncher.recommendations": "Recommandations de l'ancien écran d'accueil"
+      }
+    },
+    {
+      "titre": "Rapports Google",
+      "explication": "Envoi de rapports de bugs et de commentaires.",
+      "recommande": true,
+      "paquets": {
+        "com.google.android.feedback": "Commentaires",
+        "com.google.android.tv.bugreportsender": "Rapports de bugs"
+      }
+    },
+    {
+      "titre": "Applis TCL facultatives",
+      "explication": "À garder si tu t'en sers.",
+      "recommande": false,
+      "paquets": {
+        "com.tcl.appmarket2": "Boutique TCL",
+        "com.tcl.tv.tclhome_passive": "TCL Channel",
+        "com.tcl.copydatatotv": "Envoi de fichiers du téléphone vers la télé",
+        "com.tcl.keyhelp": "Aide sur les touches de la télécommande"
+      }
+    },
+    {
+      "titre": "Applis Google facultatives",
+      "explication": "À garder si tu t'en sers.",
+      "recommande": false,
+      "paquets": {
+        "com.google.android.katniss": "Assistant vocal et recherche vocale (bouton micro)",
+        "com.google.android.videos": "Google Play Films & TV",
+        "com.google.android.play.games": "Google Play Jeux",
+        "com.google.android.music": "Google Play Music (service fermé par Google)"
+      }
+    }
+  ],
+  "ecrans_accueil_remplaces": {
+    "com.google.android.tvlauncher": "Écran d'accueil Google",
+    "com.google.android.leanbacklauncher": "Ancien écran d'accueil Google",
+    "com.google.android.backdrop": "Économiseur d'écran Google"
+  },
+  "masques_dans_puritv": [ "com.tcl.partnercustomizer" ],
+  "jamais": {
+    "com.tcl.tv": "Lecteur TV (chaînes, entrées HDMI)",
+    "com.tcl.tvinput": "Entrée antenne",
+    "com.tcl.tvpassthrough": "Entrées HDMI",
+    "com.tcl.sourcemananger": "Choix des sources",
+    "com.tcl.settings": "Réglages TCL (image, son)",
+    "com.tcl.framework.custom": "Socle système TCL",
+    "com.tcl.tcl_bt_rcu_service": "Télécommande Bluetooth",
+    "com.tcl.autopair": "Appairage de la télécommande",
+    "com.tcl.keycustomfunctionservice": "Touches de la télécommande",
+    "com.tcl.systemuioverlay": "Interface système TCL",
+    "com.tcl.partnercustomizer": "Personnalisation système TCL",
+    "com.tcl.rc.ota": "Mises à jour de la télécommande",
+    "com.tcl.versionUpdateApp": "Mises à jour système",
+    "com.tcl.ui_mediaCenter": "Lecteur de clé USB",
+    "com.google.android.apps.mediashell": "Chromecast",
+    "com.android.vending": "Play Store",
+    "com.google.android.gms": "Services Google Play"
+  }
+}

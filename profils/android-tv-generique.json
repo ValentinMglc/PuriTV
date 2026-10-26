@@ -1,0 +1,47 @@
+{
+  "nom": "Android TV (générique)",
+  "teste_sur": "Profil prudent pour les télés sans profil dédié : seulement des éléments Google courants.",
+  "correspond": { "fabricant": "*", "android": "*" },
+  "categories": [
+    {
+      "titre": "Recommandations sponsorisées Google",
+      "explication": "Les rangées « à découvrir » de l'écran d'accueil Google.",
+      "recommande": true,
+      "paquets": {
+        "com.google.android.tvrecommendations": "Recommandations",
+        "com.google.android.leanbacklauncher.recommendations": "Recommandations de l'ancien écran d'accueil"
+      }
+    },
+    {
+      "titre": "Rapports Google",
+      "explication": "Envoi de rapports de bugs et de commentaires.",
+      "recommande": true,
+      "paquets": {
+        "com.google.android.feedback": "Commentaires",
+        "com.google.android.tv.bugreportsender": "Rapports de bugs"
+      }
+    },
+    {
+      "titre": "Applis Google facultatives",
+      "explication": "À garder si tu t'en sers.",
+      "recommande": false,
+      "paquets": {
+        "com.google.android.katniss": "Assistant vocal et recherche vocale (bouton micro)",
+        "com.google.android.videos": "Google Play Films & TV",
+        "com.google.android.play.games": "Google Play Jeux",
+        "com.google.android.music": "Google Play Music (service fermé par Google)"
+      }
+    }
+  ],
+  "ecrans_accueil_remplaces": {
+    "com.google.android.tvlauncher": "Écran d'accueil Google",
+    "com.google.android.leanbacklauncher": "Ancien écran d'accueil Google",
+    "com.google.android.backdrop": "Économiseur d'écran Google"
+  },
+  "masques_dans_puritv": [],
+  "jamais": {
+    "com.google.android.apps.mediashell": "Chromecast",
+    "com.android.vending": "Play Store",
+    "com.google.android.gms": "Services Google Play"
+  }
+}
